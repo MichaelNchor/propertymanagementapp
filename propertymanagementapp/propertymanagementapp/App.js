@@ -6,8 +6,8 @@ const cors = require('cors');
 const path = require('path');
 const fs = require('fs-extra');
 const axios = require('axios');
-const session = require('express-session');
-const MemoryStore = require('memorystore')(session);
+// const session = require('express-session');
+// const MemoryStore = require('memorystore')(session);
 const fileUpload = require('express-fileupload');
 const resizeImg = require('resize-img');
 const expressValidator = require('express-validator');
@@ -45,15 +45,15 @@ app.use(bodyParser.json());
 //     // cookie: { secure: true },
 // }));
 
-app.use(session({
-    cookie: { maxAge: 86400000 },
-    store: new MemoryStore({
-      checkPeriod: 86400000 // prune expired entries every 24h
-    }),
-    resave: false,
-    secret: process.env.TOKEN_KEY,
-    saveUninitialized: true,
-}))
+// app.use(session({
+//     cookie: { maxAge: 86400000 },
+//     store: new MemoryStore({
+//       checkPeriod: 86400000 // prune expired entries every 24h
+//     }),
+//     resave: false,
+//     secret: process.env.TOKEN_KEY,
+//     saveUninitialized: true,
+// }))
 
 // Express Validator middleware
 app.use(expressValidator({
@@ -99,7 +99,7 @@ app.use(function (req, res, next) {
 
 // Passport Middleware
 app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.session());
 
 app.get('*', function(req,res,next) {
   res.locals.user = req.user || null;
