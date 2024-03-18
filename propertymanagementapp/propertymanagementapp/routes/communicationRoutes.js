@@ -9,7 +9,7 @@ var router = express.Router();
 router.get('/', (req, res) => {
 
     res.render(
-        `/main/communication`, {
+        `${process.env.VIEWS_DIR}/main/communication`, {
         title: 'communication',
     });
 

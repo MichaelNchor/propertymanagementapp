@@ -9,7 +9,7 @@ var router = express.Router();
 router.get('/profile', (req, res) => {
 
     res.render(
-        `/main/user-profile`, {
+        `${process.env.VIEWS_DIR}/main/user-profile`, {
         title: 'my-profile',
     });
     
