@@ -17,27 +17,29 @@ Follow these steps to run the Node.js application:
 
 1. **Clone the Repository**: If you haven't already, clone the repository to your local machine:
 
-    git clone <repository_url>
+    `git clone <repository_url>`
     
 2. **Navigate to the Directory**: Enter the directory of the Node.js application:
 
-   cd <directory_name>
+    `cd <directory_name>`
    
 3. **Install Dependencies**: Install the required dependencies by running:
 
-  npm install
+    `npm install`
   
 4. **Run with Node**:
 
 To run the application using Node, execute the following command:
 
-  node app.js
+    `node app.js`
   
 This will start the application, and you should see output indicating that the server is running.
 
 5. **Run with Nodemon (Optional)**:
 
 If you prefer using Nodemon for automatic server restarts on file changes, execute:
+
+    `nodemon app.js`
 
 Nodemon will monitor for any changes in your files and automatically restart the server when necessary.
 
