@@ -9,7 +9,7 @@ var router = express.Router();
 router.get('/', (req, res) => {
 
     res.render(
-        `${process.env.VIEWS_DIR}/main/property`, {
+        `/main/property`, {
         title: 'property',
     });
     
@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 router.get('/details', (req, res) => {
 
     res.render(
-        `${process.env.VIEWS_DIR}/main/property-details`, {
+        `/main/property-details`, {
         title: 'property details',
     });
     
