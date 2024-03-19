@@ -9,7 +9,7 @@ var bcrypt = require('bcryptjs');
 router.get('/register', function (req, res) {
 
     res.render(
-        `${process.env.VIEWS_DIR}/main/authentication-register`, {
+        `./bootstrapdemos.wrappixel.com/spike/dist/main/authentication-register`, {
         title: 'Register'
     });
 
@@ -21,7 +21,7 @@ router.get('/register', function (req, res) {
 router.get('/login', function (req, res) {    
     
     res.render(
-        `${process.env.VIEWS_DIR}/main/authentication-login`, {
+        `./bootstrapdemos.wrappixel.com/spike/dist/main/authentication-login`, {
         title: 'Log in'
     });
 

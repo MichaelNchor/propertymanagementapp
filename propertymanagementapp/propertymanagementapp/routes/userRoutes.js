@@ -9,7 +9,7 @@ var router = express.Router();
 router.get('/profile', (req, res) => {
 
     res.render(
-        `${process.env.VIEWS_DIR}/main/user-profile`, {
+        `./bootstrapdemos.wrappixel.com/spike/dist/main/user-profile`, {
         title: 'my-profile',
     });
     

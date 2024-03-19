@@ -9,7 +9,7 @@ var router = express.Router();
 router.get('/', (req, res) => {
 
     res.render(
-        `${process.env.VIEWS_DIR}/main/communication`, {
+        `./bootstrapdemos.wrappixel.com/spike/dist/main/communication`, {
         title: 'communication',
     });
 
