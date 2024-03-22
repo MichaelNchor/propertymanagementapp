@@ -1,4 +1,4 @@
-## Property Management App Project
+## Leasify Project
 
 ## Running the Node.js App with Node or Nodemon
 
